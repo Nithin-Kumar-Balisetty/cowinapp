@@ -156,7 +156,7 @@ let SelectCountry = ()=>{
     React.useEffect(()=>{
       console.log(arrowindex);
       setelement(<Allcountrydiv array = {array} selectedindex={arrowindex} changeindex={(e)=>setarrowindex(e.index)}
-       clickedindex={(e)=>console.log(e)} />);
+       clickedindex={(event)=>console.log(event)} />);
       console.log('effect');
       console.log(array);
     },[arrowindex]); 
