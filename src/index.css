@@ -39,11 +39,11 @@ code {
   margin-left: auto;
 }
 
-.header-navbar p{
+.header-navbar a{
   padding : 1rem;
 }
 
-.header-navbar p:hover{
+.header-navbar a:hover{
   color : black;
   background-color :white;
 }
