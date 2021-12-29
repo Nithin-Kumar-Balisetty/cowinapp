@@ -57,6 +57,7 @@ let Childcountry =(props)=>{
         props.country(event.country_iso3);
         setclassname("hidden");
         getcountry("");
+        document.querySelector("input[type=text]").blur();
       } 
   
       React.useEffect(()=>{
@@ -99,6 +100,7 @@ let Childcountry =(props)=>{
               props.country(array[arrowindex].Iso3);
               setclassname("hidden");
               getcountry("");
+              document.querySelector("input[type=text]").blur();
             }
         }
       }
