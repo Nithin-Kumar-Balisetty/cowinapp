@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import MainComp from "./routes/home/MainComp";
 import Header from "./routes/home/Header";
+import CertificateComp from "./routes/viewcert/CertificateComp";
 
 function HomeRoute(){
   return (
@@ -18,13 +19,25 @@ function HomeRoute(){
     </div>
   );
 }
+
+let Certficateroute= ()=>{
+  //console.log(document);
+  return (
+    <div>
+        <Header />
+        <br />
+        <CertificateComp />
+    </div>
+  );
+}
+
 function App() {
   console.log('App started');
   return (
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<HomeRoute />} />
-      <Route path="/viewcertificate" element={(<div>Hello</div>)} />
+      <Route path="/viewcertificate" element={ < Certficateroute />} />
     </Routes>
   </BrowserRouter>
   );
